@@ -90,74 +90,7 @@ h5 {
 h6 {
   font-size: 1em; }
 
-.modal {
-  -webkit-transform: translateY(-10%);
-  -moz-transform: translateY(-10%);
-  -ms-transform: translateY(-10%);
-  -o-transform: translateY(-10%);
-  transform: translateY(-10%);
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  background: #ffffff;
-  bottom: 0;
-  box-shadow: 0 3px 3px rgba(50, 58, 69, 0.2);
-  box-sizing: border-box;
-  opacity: 0;
-  padding: 2em 2em 1em;
-  position: fixed;
-  top: 0;
-  visibility: hidden;
-  width: 100%;
-  z-index: 1000; }
-  @media screen and (min-width: 40em) {
-    .modal {
-      height: 525px;
-      left: 50%;
-      margin-left: -285px;
-      padding: 2.25em 2em 1.5em;
-      top: 2em;
-      width: 570px; } }
-  @media screen and (min-width: 53.75em) {
-    .modal {
-      margin-left: -310px;
-      width: 620px; } }
-  .active.modal {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-    visibility: visible; }
-  .modal h2 {
-    color: #205493;
-    text-align: center; }
-  .modal p {
-    line-height: 1.3em; }
-  .modal .action {
-    text-align: center; }
-  .modal .button {
-    font-size: 1em; }
-    @media screen and (min-width: 40em) {
-      .modal .button {
-        font-size: 1.1em; } }
-  .modal .close {
-    color: #323a45;
-    cursor: pointer;
-    font-size: 1.5em;
-    font-weight: bold;
-    line-height: 1em;
-    position: absolute;
-    right: 0.25em;
-    top: 0.25em; }
-    @media screen and (min-width: 40em) {
-      .modal .close {
-        color: #ffffff;
-        font-size: 3em;
-        font-weight: 400;
-        right: -0.75em;
-        top: -0.3em; } }
+
 
 .state-select select {
   -webkit-appearance: none;
@@ -493,7 +426,7 @@ figure {
 .ios .hero,
 .no-cssgradients .hero,
 .no-multiplebgs .hero {
-  background-image: url("../../../images/new-hero-ie.jpg"); }
+  background-image: url("../../../images/NewHero.png"); }
 
 .no-js .modal {
   display: none; }
@@ -526,7 +459,7 @@ figure {
     visibility: visible; }
 
 .safari .hero {
-  background-image: url("../../../images/new-hero-ie.jpg"); }
+  background-image: url("../../../images/NewHero.png"); }
 
 .social-buttons {
   margin-top: 1.5em;
@@ -2133,4 +2066,86 @@ figure {
 		      overflow: hidden; } }
 		  .usa-circle-block {
 		    text-align: center; }
+			
+		    .modalDialog {
+				position: fixed;
+				font-family: Arial, Helvetica, sans-serif;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: rgba(0, 0, 0, 0.8);
+				z-index: 99999;
+				opacity:0;
+				-webkit-transition: opacity 400ms ease-in;
+				-moz-transition: opacity 400ms ease-in;
+		 	    transition: all 0.4s ease;
+				pointer-events: none;
+	  			-webkit-transition: all 0.4s ease;
+	  		  	-moz-transition: all 0.4s ease;
+	   		 	box-shadow: 0 3px 3px rgba(50, 58, 69, 0.2);
+	   		 	box-sizing: border-box;
+	   		 	padding: 2em 2em 2em 2em;
+	  		  	width: 100%;
+	  		  	z-index: 99999; }
+				
+		 	   .modalDialog:target {
+					opacity:1;
+					pointer-events: auto;
+				}
+				.modalDialog > div {
+					position: relative;
+					margin: 5% auto;
+					padding: 5px 20px 13px 20px;
+					border-radius: 10px;
+					background: #fff;
+	  				background: #ffffff;
+	  	 		   	box-shadow: 0 3px 3px rgba(50, 58, 69, 0.2);
+	  	 		 	box-sizing: border-box;
+	  	 			padding: 2em 2em 1em;
+		 			background: -moz-linear-gradient(#fff, #999);
+		 	  		background: -webkit-linear-gradient(#fff, #999);
+		 	  		background: -o-linear-gradient(#fff, #999);
+  	  				-webkit-transition: all 0.4s ease;
+  	  				-moz-transition: all 0.4s ease;
+  	  				transition: all 0.4s ease;
+  	  				bottom: 0;
+  	  				box-shadow: 0 3px 3px rgba(50, 58, 69, 0.2);
+  	  				box-sizing: border-box;
+				}
+			    @media screen and (min-width: 40em) {
+			      .modalDialog > div {			      
+			        width: 570px; } }
+
+		   .modalDialog h2 {
+		     color: #205493;
+		     text-align: center; }
+		   .modalDialog p {
+		     line-height: 1.3em; }
+		   .modalDialog .action {
+		     text-align: center; }
+		   .modalDialog .button {
+		     font-size: 1em; }
+		     @media screen and (min-width: 40em) {
+		       .modal .button {
+		         font-size: 1.1em; } }
+		   .modalDialog .close-modal {
+		     color: #323a45;
+		     cursor: pointer;
+		     font-size: 1.5em;
+		     font-weight: bold;
+		     line-height: 1em;
+		     position: absolute;
+		     right: 0.25em;
+			 text-decoration: none;
+		     top: 0.25em; }
+		     @media screen and (min-width: 40em) {
+		       .modalDialog .close {
+		         color: #ffffff;
+		         font-size: 3em;
+		         font-weight: 400;
+		         right: -0.75em;
+		         top: -0.3em; } 
+			 }
+		
 
