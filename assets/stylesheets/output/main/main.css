@@ -355,16 +355,16 @@ figure {
     margin: 0 1em 0.5em 0; }
 
 .hero {
-  background-image: linear-gradient(60deg, rgba(0, 36, 61, 0.7) -10%, rgba(0, 144, 239, 0.8) 100%), url("../../../images/NewHero2.jpg");
+  background-image: linear-gradient(60deg, rgba(0, 36, 61, .5) -10%, rgba(255, 255, 255, 1) 100%), url("../../../images/NewHero2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
   height: 550px;
-  padding-top: 6.5em; }
+  padding-top: 3em; }
   @media screen and (min-width: 40em) {
     .hero {
       height: 600px;
-      padding-top: 5em; } }
+      padding-top: 3em; } }
   .hero p {
     font-family: "Merriweather";
     font-size: 1em;
