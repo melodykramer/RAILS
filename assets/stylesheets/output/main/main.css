@@ -2112,9 +2112,10 @@ figure {
 		        margin-bottom: 7rem; } }
 
 		  .usa-img-secondary {
-		    text-align: center; }
+		    text-align: left; }
 		    .usa-img-secondary img {
-		      width: 260px; }
+		      width: 90%;
+		  	  max-height: 170px;}
 
 		  .usa-circle-block img {
 		    width: 124px; }
