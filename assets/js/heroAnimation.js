@@ -1,6 +1,6 @@
 var vote2016 = vote2016 || {};
 
-var words = ["you.", "your family.", "your community."],
+var words = ["startups.", "acceleration.", "innovation.", "leadership."],
     i = 0;
 
 

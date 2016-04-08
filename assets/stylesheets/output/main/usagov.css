@@ -4,12 +4,12 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.footer .container, .hero .content, .actions .content-container {
+.footer .container, .hero .content, .actions .content-container, .usa-gov .container {
   margin: 0 auto;
   max-width: 68em;
   padding: 0 1em; }
   @media screen and (min-width: 40em) {
-    .footer .container, .hero .content, .actions .content-container {
+    .footer .container, .hero .content, .actions .content-container, .usa-gov .container {
       padding: 0 2.5em; } }
 
 @font-face {
@@ -158,7 +158,7 @@ h6 {
         font-weight: 400;
         right: -0.75em;
         top: -0.3em; } }
-
+/*
 .state-select select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -184,7 +184,7 @@ h6 {
       padding: 1em 0.7em; } }
   .state-select select:focus {
     box-shadow: 0 2px 2px rgba(227, 28, 61, 0.1); }
-
+*/
 a {
   color: #0071bc; }
 
@@ -271,8 +271,8 @@ figure {
     width: 70px;
     margin-left: 5px; }
   .footer .usa-logo {
-    width: 80px;
-    margin-left: 40px; }
+    width: 130px;
+    margin-top: 10px; }
   .footer .built-by {
     color: #aeb0b5;
     font-size: 0.9em;
@@ -353,18 +353,18 @@ figure {
     display: inline-block;
     font-size: 0.85em;
     margin: 0 1em 0.5em 0; }
-
+/*
 .hero {
-  background-image: linear-gradient(60deg, rgba(0, 36, 61, .5) -10%, rgba(255, 255, 255, 1) 100%), url("../../../images/NewHero2.jpg");
+  background-image: linear-gradient(60deg, rgba(0, 36, 61, 0.7) -10%, rgba(0, 144, 239, 0.8) 100%), url("../../../images/NewHero2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
   height: 550px;
-  padding-top: 3em; }
+  padding-top: 6.5em; }
   @media screen and (min-width: 40em) {
     .hero {
       height: 600px;
-      padding-top: 3em; } }
+      padding-top: 5em; } }
   .hero p {
     font-family: "Merriweather";
     font-size: 1em;
@@ -388,7 +388,7 @@ figure {
   .hero .description {
     margin: 0 auto;
     max-width: 40em; }
-
+*/
 .hero-header {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -567,13 +567,11 @@ figure {
   width: 200%; }
 
 @media screen and (min-width: 40em) {
-  .already-registered-modal,
   .no-vote-modal,
   .state-modal {
     height: 320px;
     margin: -160px 0 0 -320px;
     top: 50%; } }
-.already-registered-modal p,
 .no-vote-modal p,
 .state-modal p {
   text-align: center; }
@@ -705,7 +703,7 @@ figure {
       color: #e63350;
       display: block;
       font-size: 2.25em;
-      margin: 0.17em 0 0.25em; }
+      margin-bottom: 0.25em; }
   .representation p {
     font-size: 1em;
     line-height: 1.3em; }
@@ -767,5 +765,172 @@ figure {
     .why-voteusa p {
       line-height: 1.5em;
       font-size: 1.1em; } }
+
+.usa-gov {
+  margin: 0;
+  padding: 0; }
+  .usa-gov ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .usa-gov .betalnk a {
+    color: #ffffff;
+    text-decoration: none; }
+  .usa-gov #content {
+    padding-top: 2em; }
+    .usa-gov #content h1 {
+      color: #9f142b;
+      font-family: "Source Sans Pro";
+      font-size: 1.75em;
+      font-weight: normal; }
+    .usa-gov #content h2 {
+      color: #005289;
+      font-family: "Source Sans Pro";
+      font-size: 1.35em;
+      margin-top: 1.5em; }
+    .usa-gov #content ul {
+      line-height: 1.2em;
+      list-style: disc;
+      margin-left: 1.5em; }
+      .usa-gov #content ul ul {
+        list-style: circle; }
+    .usa-gov #content .button {
+      background: none;
+      padding: 0; }
+      .usa-gov #content .button button {
+        background-color: #0071bc;
+        color: #ffffff;
+        padding: 1em; }
+    .usa-gov #content .flat {
+      padding-left: 1em; }
+    .usa-gov #content .text {
+      background-color: #eff9ff;
+      padding: 1em 0 1em 1em; }
+  .usa-gov .cntrlogo {
+    text-align: left; }
+    @media screen and (min-width: 40em) {
+      .usa-gov .cntrlogo {
+        text-align: center; } }
+    .usa-gov .cntrlogo img {
+      max-width: 12em; }
+      @media screen and (min-width: 40em) {
+        .usa-gov .cntrlogo img {
+          max-width: none; } }
+  .usa-gov .logolink {
+    display: inline-block; }
+  .usa-gov .mnmenu .container {
+    max-width: 75em; }
+  .usa-gov .navItems {
+    display: none; }
+    .usa-gov .navItems:after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media screen and (min-width: 40em) {
+      .usa-gov .navItems {
+        display: block; } }
+    .usa-gov .navItems li {
+      float: left;
+      display: block;
+      margin-right: 1.75788%;
+      width: 10.96186%;
+      text-align: center; }
+      .usa-gov .navItems li:last-child {
+        margin-right: 0; }
+      .usa-gov .navItems li a {
+        color: #ffffff;
+        display: table;
+        height: 115px;
+        text-decoration: none;
+        width: 100%; }
+        .usa-gov .navItems li a.current {
+          background: #fff;
+          border: none;
+          border-top: 6px solid #c61f0c;
+          color: #1b50a0;
+          font-weight: normal;
+          padding: 4px 0 0 0; }
+      .usa-gov .navItems li span {
+        display: table-cell;
+        background-repeat: no-repeat;
+        background-position: top center;
+        line-height: 20px;
+        padding: 40px 0 0 0;
+        position: relative;
+        vertical-align: middle; }
+      .usa-gov .navItems li .icon-agencies {
+        background-image: url("https://vote.usa.gov/assets/images/gsa/Icon_Nav_Money.png"); }
+      .usa-gov .navItems li .icon-globe {
+        background-image: url("https://vote.usa.gov/assets/images/gsa/Icon_Nav_Elected_Officials.png"); }
+      .usa-gov .navItems li .icon-heart {
+        background-image: url("https://vote.usa.gov/assets/images/gsa/Icon_Nav_Health.png"); }
+      .usa-gov .navItems li .icon-home {
+        background-image: url("https://vote.usa.gov/assets/images/gsa/Icon_Nav_Home_Red.png"); }
+      .usa-gov .navItems li .icon-job {
+        background-image: url("https://vote.usa.gov/assets/images/gsa/Icon_Nav_Job.png"); }
+      .usa-gov .navItems li .icon-mortgage {
+        background-image: url("https://vote.usa.gov/assets/images/gsa/Icon_Nav_Mortgage.png"); }
+      .usa-gov .navItems li .icon-plus {
+        background-image: url("https://vote.usa.gov/assets/images/gsa/Icon_Nav_Travel.png"); }
+      .usa-gov .navItems li .icon-tax {
+        background-image: url("https://vote.usa.gov/assets/images/gsa/Icon_Nav_More.png"); }
+  .usa-gov .hidden {
+    display: none; }
+  .usa-gov .searchbkgnd {
+    background: #323a45;
+    display: none;
+    padding: 1em 0; }
+    @media screen and (min-width: 40em) {
+      .usa-gov .searchbkgnd {
+        display: block; } }
+    .usa-gov .searchbkgnd p {
+      margin-top: 0; }
+    .usa-gov .searchbkgnd .container:after {
+      clear: both;
+      content: "";
+      display: table; }
+    .usa-gov .searchbkgnd #search {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 74.41059%; }
+      .usa-gov .searchbkgnd #search:last-child {
+        margin-right: 0; }
+      .usa-gov .searchbkgnd #search input {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 1.1em;
+        height: 40px;
+        padding: 0.25em;
+        width: 85%; }
+      .usa-gov .searchbkgnd #search .submit {
+        background-color: #0071bc;
+        border: none;
+        color: #ffffff;
+        font-size: 1.1em;
+        height: 40px;
+        outline: none;
+        padding: 0 0.75em; }
+    .usa-gov .searchbkgnd .searchttl {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%;
+      color: #ffffff;
+      font-size: 1.2em;
+      font-weight: 500;
+      padding-top: 0.5em;
+      text-align: right; }
+      .usa-gov .searchbkgnd .searchttl:last-child {
+        margin-right: 0; }
+  .usa-gov #header {
+    background-color: #1b50a0;
+    padding-top: 1em;
+    position: relative; }
+  .usa-gov #state {
+    border: 2px solid #c9cacd; }
+  .usa-gov .state-select {
+    margin: 0 0 6em; }
 
 /*# sourceMappingURL=main.css.map */
