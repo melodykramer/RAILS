@@ -101,7 +101,7 @@
   	            <li class="play_square"><a href="#process" title="Process">Process</a></li>
   	        </ul>
   	        <div id="menu_icon">
-  	          <a href="#plays_index_anchor" title="Return to Index"></a>
+  	          <a href="#RIALS_anchor" title="Return to Index"></a>
   	        </div>
   	      </div>
   	    </div>
@@ -142,21 +142,22 @@
           <div class="social-buttons">
             <ul>
               <li>
-                <a href="https://twitter.com/home?status=I%20just%20updated%20my%20voter%20registration%20using%20https%3A//vote.usa.gov/" target="blank">
+                <a href="https://twitter.com/home?status=I%20just%applied%for%20the%20Sacramento%20Startup%20Program%20RAILS%20https%3A//sacmoie.github.com/RAILS/" target="blank">
                   <div class="twitter"></div>
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//vote.usa.gov/" target="_blank">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//sacmoie.github.com/RAILS/" target="_blank">
                   <div class="facebook"></div>
                 </a>
               </li>
             </ul>
         </div>
       </section>
+	  
+	  <a class="anchor_offset" id="RAILS_anchor"></a>
 
       <section class="representation">
-	      <a class="anchor_offset" id="plays_index_anchor"></a>
 		  
 	      <a class="anchor_offset" id="intro"></a>
 		  
@@ -411,24 +412,42 @@
 
 	 			<form accept-charset="UTF-8" action="https://public.govdelivery.com/accounts/CASACRA/subscriber/qualify" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="2mOoVfCQVbvV7R0VzC76i6TeUwV1pgIW8tlmH08JYPQ=" /></div>
 
-	 			<fieldset id='quick_subscribe_new'>
-	 			<div id='quick_subscribe_new_instructions'>
-	 			To sign up for updates or to access your subscriber preferences, please enter your contact information below.
-	 			</div>
-	 			<div class='input_group'>
-	 			<select id="subscription_type"  style='display: none' name="subscription_type"><option value="email">Email</option>
-	 			</div>
+				<form accept-charset="UTF-8" action="/accounts/CASACRA/subscriber/qualify" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jx5d6PXYKnrePeGfoSf7zESZBCzudTbVDjA9BdgVhZg=" /></div>
 
-<input type="text" name="email" id="email" Svalue="Enter Your Email" onblur="if(this.value == '') { this.style.color='#f00'; this.value='Enter The User Name'}" onfocus="if (this.value == 'Enter The User Name') {this.style.color='#000'; this.value=''}" />
+				<fieldset id='quick_subscribe_new'>
+				<h1>
+				Email Updates
+				</h1>
+				<div id='quick_subscribe_new_instructions'>
+				To sign up for updates or to access your subscriber preferences, please enter your contact information below.
+				</div>
+				<ul class='form'>
+				<label for="subscription_type">Subscription Type</label>
+				<div class='input_group'>
+				<select id="subscription_type" name="subscription_type"><option value="email">Email</option>
+				<option value="phone">SMS/Text Message</option></select>
+				</div>
+				</li>
+				<li class='wireless_fields' style='display: none'>
+				<label for="phone" style="display: none;"><img alt="Required" class="required" src="https://public.govdelivery.com/assets/required-78488f80fdf01bdcae8e2eb96468960c.gif" />Wireless Number</label>
+				<div class='input_group'>
+				<!-- The full translation path is used because the translation of .select_title doesn't always resolves to the same i18n path -->
+				<select disabled="disabled" id="country_code_display" name="country_code_display" title="Country code"><option value="1 (US)">1 (US)</option>
+				<option value="1">1</option></select>
+				<input id="country_code" name="country_code" title="Country code" type="hidden" value="1" />
 
+				<input class="medium" id="phone" name="phone" title="Wireless Number" type="text" />
+				</div>
 
+				</li>
+				<li class='email_fields' style='display: block'>
+				<label for="email" style="display: none;"><img alt="Required" class="required" src="https://public.govdelivery.com/assets/required-78488f80fdf01bdcae8e2eb96468960c.gif" />Email Address</label>
+				<input class="long" id="email" name="email" type="text" />
 
-	 			</ol>
-	 			<div class='button_panel'>
-	 			<input class="button" name="commit" type="submit" value="Submit" />
-	 		</div>
-	 			</fieldset>
-	 			</form>
+				</li>
+				</ul>
+				</fieldset>
+				</form>
 
 	 			<script type='text/javascript'>
 	 			  //<![CDATA[
