@@ -2179,4 +2179,8 @@ figure {
 			 @media screen { #navigation_bar.show { visibility: visible; display: block; height: 60px; } }
 			 @media screen and (min-width: 0px) and (max-width: 640px) { #navigation_bar.show { height: 48px; visibility: visible; display: block; } }
 
+			 form ul {
+				 list-style-type: none;
+				 padding: 0;
+			 }
 
