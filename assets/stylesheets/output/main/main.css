@@ -76,7 +76,8 @@ h1 {
   font-size: 2em; }
 
 h2 {
-  font-size: 1.75em; }
+  font-size: 1.75em;
+  text-decoration: underline;}
 
 h3 {
   font-size: 1.5em; }
@@ -175,7 +176,9 @@ figure {
       color: #ffffff; }
     .footer .disclaimer p {
       margin-top: 0px;
-      line-height: 1.1em; }
+      line-height: 1.1em; 
+	  font-size: 1em;
+  	  }
   .footer .gsa-logo {
     float: left;
     width: 75px;
@@ -196,7 +199,8 @@ figure {
     padding-left: 1em;
     width: auto; }
     .footer .site-description p {
-      margin-top: 10px; }
+      margin-top: 10px; 
+  font-size: 1em;}
       @media screen and (min-width: 53.75em) {
         .footer .site-description p {
           margin-top: 0px; } }
@@ -1441,7 +1445,7 @@ figure {
 		    padding: 1em; }
 		    @media screen and (min-width: 600px) {
 		      .usa-alert {
-		        background-size: 5.2rem; } }
+		        background-size: 4.2rem; } }
 		    .usa-alert ul {
 		      margin-bottom: 0;
 		      margin-top: 1em; }
@@ -1460,7 +1464,8 @@ figure {
 
 		  .usa-alert-heading {
 		    margin-bottom: .3rem;
-		    margin-top: 0; }
+		    margin-top: 0; 
+			text-align: left;}
 		    @media screen and (min-width: 600px) {
 		      .usa-alert-heading {
 		        margin-top: .3rem; } }
@@ -1468,27 +1473,28 @@ figure {
 		  .usa-alert-text {
 		    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 		    margin-bottom: 0;
-		    margin-top: 0; }
+		    margin-top: 0; 
+			text-align: left;}
 
 		  .usa-alert-success {
 		    background-color: #e7f4e4;
-		    background-image: url("../img/alerts/success.png");
-		    background-image: url("../img/alerts/success.svg"); }
+		    background-image: url("../assets/images/alerts/success.png");
+		    background-image: url("../assets/images/alerts/success.svg"); }
 
 		  .usa-alert-warning {
 		    background-color: #fff1d2;
-		    background-image: url("../img/alerts/warning.png");
-		    background-image: url("../img/alerts/warning.svg"); }
+		    background-image: url("../assets/images/alerts/warning.png");
+		    background-image: url("../assets/images/alerts/warning.svg"); }
 
 		  .usa-alert-error {
 		    background-color: #f9dede;
-		    background-image: url("../img/alerts/error.png");
-		    background-image: url("../img/alerts/error.svg"); }
+		    background-image: url("/assets/images/alerts/error.png");
+		    background-image: url("../assets/images/alerts/error.svg"); }
 
 		  .usa-alert-info {
 		    background-color: #e1f3f8;
-		    background-image: url("../img/alerts/info.png");
-		    background-image: url("../img/alerts/info.svg"); }
+		    background-image: url("../../../images/alerts/info.png");
+		    background-image: url("../../../images/alerts/info.svg"); }
 
 		  .usa-alert-no_icon {
 		    background-image: none; }
@@ -1963,7 +1969,7 @@ figure {
 
 		  p {
 		    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-		    font-size: 1rem; }
+		    font-size: 1.1rem; }
 
 		  .usa-intro {
 		    max-width: 660px; }
@@ -2042,7 +2048,7 @@ figure {
 		      color: #ffffff; }
 		    @media screen and (min-width: 600px) {
 		      .usa-section-dark .usa-width-one-half-top {
-		        margin-bottom: 7rem; } }
+		        margin-bottom: 4rem; } }
 
 		  .usa-img-secondary {
 		    text-align: left; }
@@ -2069,7 +2075,6 @@ figure {
 			
 		    .modalDialog {
 				position: fixed;
-				font-family: Arial, Helvetica, sans-serif;
 				top: 0;
 				right: 0;
 				bottom: 0;
