@@ -2111,7 +2111,7 @@ figure {
 			 @media screen and (min-width: 0px) and (max-width: 640px) { #navigation_bar ul { display: none; }
 			   #navigation_bar #menu_icon { display: inline-block; }
 			   #navigation_bar .outer_container { padding: 0 20px; }
-			   #navigation_bar h3 { font-size: 16px; padding: 16px 0; line-height: 16px; } }
+			   #navigation_bar h3 { font-size: 14px; padding: 16px 0; line-height: 16px; } }
 			 @media screen and (min-width: 641px) and (max-width: 980px) { #navigation_bar ul { display: none; }
 			   #navigation_bar #menu_icon { display: inline-block; margin-top: 20px; height: 18px; width: 20px; } }
 
@@ -2135,7 +2135,7 @@ figure {
 			 	    font-family: "Merriweather", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 				 }
 			 
-			 @media screen and (max-width: 460px;) {
+			 @media screen and (min-width: 0px) and (max-width: 640px) {
 				 .button_panel form input[type="submit"] {
 				margin-top: .5rem;
 		 	    background-color: #0071bc;
