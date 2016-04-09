@@ -2113,7 +2113,7 @@ figure {
 			   #navigation_bar .outer_container { padding: 0 20px; }
 			   #navigation_bar h3 { font-size: 14px; padding: 16px 0; line-height: 16px; } }
   			 @media screen and (min-width: 0px) and (max-width: 320px) { #navigation_bar ul { display: none; }
-  			   #navigation_bar #menu_icon { display: inline-block; height: 12px; width: 14px; margin-top: 4px;}
+  			   #navigation_bar #menu_icon { display: inline-block; height: 12px; width: 14px; margin-top: 14px;}
   			   #navigation_bar .outer_container { padding: 0 20px; }
   			   #navigation_bar h3 { font-size: 12px; padding: 16px 0; line-height: 16px; } }
 			 @media screen and (min-width: 641px) and (max-width: 980px) { #navigation_bar ul { display: none; }
