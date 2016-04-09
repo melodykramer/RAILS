@@ -2053,8 +2053,14 @@ figure {
 		  .usa-img-secondary {
 		    text-align: left; }
 		    .usa-img-secondary img {
-		      width: 90%;
+		      width: 100%;
 		  	  max-height: 170px;}
+			  .usa-img-primary {
+			    text-align: left; }
+			    .usa-img-primary img {
+			      width: 100%;
+			  	 }
+
 
 		  .usa-circle-block img {
 		    width: 124px; }
