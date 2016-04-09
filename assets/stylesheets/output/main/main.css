@@ -2248,5 +2248,12 @@ figure {
 			 
 			 .button_panel form button[type="submit"], form input[type="submit"] {
 				 margin-top: .5rem;
+		 	    background-color: #0071bc;
+		 	    border: 0;
+		 	    border-radius: 0.3rem;
+		 	    color: #ffffff;
+		 	    cursor: pointer;
+		 	    display: inline-block;
+		 	    font-family: "Merriweather", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 			 }
 
