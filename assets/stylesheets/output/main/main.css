@@ -854,7 +854,6 @@ figure {
   text-decoration: none;
   width: 100%;
   -webkit-appearance: none;
-  -webkit-border-radius: 0;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -1410,7 +1409,7 @@ p {
   display: inline-block;
   font-family: "Merriweather","Source Sans Pro","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
   -webkit-appearance: none;
-  -webkit-border-radius: 0;
+
 }  
 
 
