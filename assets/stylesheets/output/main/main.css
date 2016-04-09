@@ -320,7 +320,7 @@ figure {
 
 
 .hero {
-  background-image: linear-gradient(60deg,rgba(160,32,240,.5) -10%,rgba(255,255,255,1) 100%),url(../../../images/NewHero2.jpg);
+  background-image: linear-gradient(60deg,rgba(160,32,240,.5) -10%,rgba(255,255,255,1) 100%),url(../../../images/skyline.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -420,7 +420,7 @@ figure {
 
 
 .ios .hero,.no-cssgradients .hero,.no-multiplebgs .hero {
-  background-image: url(../../../images/NewHero.png);
+  background-image: url(../../../images/skyline2.jpg);
 }
 
 
@@ -460,7 +460,7 @@ figure {
 
 
 .safari .hero {
-  background-image: url(../../../images/NewHero.png);
+  background-image: url(../../../images/skyline2.jpg);
 }
 
 .social-buttons {
