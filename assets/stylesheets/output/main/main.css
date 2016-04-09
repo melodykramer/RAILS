@@ -2112,6 +2112,10 @@ figure {
 			   #navigation_bar #menu_icon { display: inline-block; }
 			   #navigation_bar .outer_container { padding: 0 20px; }
 			   #navigation_bar h3 { font-size: 14px; padding: 16px 0; line-height: 16px; } }
+  			 @media screen and (min-width: 0px) and (max-width: 320px) { #navigation_bar ul { display: none; }
+  			   #navigation_bar #menu_icon { display: inline-block; height: 8px; width: 10px; margin-top: 0px;}
+  			   #navigation_bar .outer_container { padding: 0 20px; }
+  			   #navigation_bar h3 { font-size: 12px; padding: 16px 0; line-height: 16px; } }
 			 @media screen and (min-width: 641px) and (max-width: 980px) { #navigation_bar ul { display: none; }
 			   #navigation_bar #menu_icon { display: inline-block; margin-top: 20px; height: 18px; width: 20px; } }
 
