@@ -2053,7 +2053,7 @@ figure {
 		  .usa-img-secondary {
 		    text-align: left; }
 		    .usa-img-secondary img {
-		      width: 100%;
+		      width: 90%;
 		  	  max-height: 170px;}
 			  .usa-img-primary {
 			    text-align: left; }
@@ -2158,5 +2158,25 @@ figure {
 		         right: -0.75em;
 		         top: -0.3em; } 
 			 }
-		
+			 @media screen { #navigation_bar { visibility: hidden; display: none; position: fixed; width: 100%; height: 0; background: #323A45; color: #fff; }
+			   #navigation_bar .outer_container { padding: 0 40px; }
+			   #navigation_bar h3 { padding: 20px 0; margin-top: 0; font-weight: 300; color: #fff; display: inline-block; }
+			   #navigation_bar h3:hover { text-decoration: underline; }
+			   #navigation_bar ul { float: right; display: inline; padding: 0; list-style-position: outside; }
+			   #navigation_bar .active a { text-decoration: underline; }
+			   #navigation_bar li { display: inline; margin-left: 5px; list-style-type: none; }
+			   #navigation_bar li a { display: inline-block; text-decoration: none; height: 24px; line-height: 22px; text-align: center; font-family: "Merriweather", Georgia, serif; font-weight: lighter; color: #fff;  }
+			   #navigation_bar li a:hover { background: #046B99; color: #fff; text-decoration: none; }
+			   #navigation_bar #menu_icon { display: none; height: 14px; width: 16px; margin-top: 16px; float: right; background-image: url("../../../images/arrow-up.svg"); background-size: contain; }
+			   #navigation_bar #menu_icon a { display: block; height: 100%; width: 100%; } }
+			 @media screen and (min-width: 0px) and (max-width: 640px) { #navigation_bar ul { display: none; }
+			   #navigation_bar #menu_icon { display: inline-block; }
+			   #navigation_bar .outer_container { padding: 0 20px; }
+			   #navigation_bar h3 { font-size: 16px; padding: 16px 0; line-height: 16px; } }
+			 @media screen and (min-width: 641px) and (max-width: 980px) { #navigation_bar ul { display: none; }
+			   #navigation_bar #menu_icon { display: inline-block; margin-top: 20px; height: 18px; width: 20px; } }
+
+			 @media screen { #navigation_bar.show { visibility: visible; display: block; height: 60px; } }
+			 @media screen and (min-width: 0px) and (max-width: 640px) { #navigation_bar.show { height: 48px; visibility: visible; display: block; } }
+
 

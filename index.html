@@ -72,9 +72,10 @@
     <link rel="shortcut icon" type="image/ico" href="assets/images/favicons/favicon.ico">
 
     <link rel="icon" type="image/png" href="assets/images/favicons/favicon.png">
+
     <script src="assets/js/jquery-1.11.3.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="assets/js/modernizr.js"></script>
+    <script src="assets/js/heroAnimation.js"></script>
+	
 	
     <!-- Scripts -->
       <!--[if lte IE 8]>
@@ -88,12 +89,31 @@
     <meta name="google-site-verification" content="YQGB6GWCGtbGESNaDp9-WFY24GOsyKUCb6Loi_X5jQM" />
   </head>
   <body>
+  	  <div id="navigation_bar">
+  	     <div class="outer_container">
+  	      <div class="inner_container">
+  	        <a href="#introduction"><h3>RAILS: Sacramento's Startup Program</h3></a>
+  	        <ul class="nav">
+  	            <li><a href="#intro" title="About">Context</a></li>
+  	            <li class="play_square"><a href="#program" title="Program">Program</a></li>
+  	            <li class="play_square"><a href="#rationale" title="Why Now">Why Now</a></li>
+  	            <li class="play_square"><a href="#principles" title="Princples">Principles</a></li>
+  	            <li class="play_square"><a href="#process" title="Process">Process</a></li>
+  	        </ul>
+  	        <div id="menu_icon">
+  	          <a href="#plays_index_anchor" title="Return to Index"></a>
+  	        </div>
+  	      </div>
+  	    </div>
+  	  </div>
     <div id="wrapper">
-      <aside class="usa">
+  
+      <!--<aside class="usa">
         <p>
           <img alt="US Flag" src="assets/images/us_flag_small.png">An prototype website from the city of Sacramento
         </p>
-      </aside>
+      </aside>-->
+
       <section class="hero">
         <div class="content">
 		  <p>
@@ -136,6 +156,11 @@
       </section>
 
       <section class="representation">
+	      <a class="anchor_offset" id="plays_index_anchor"></a>
+		  
+	      <a class="anchor_offset" id="intro"></a>
+		  
+		  
         <div class="content-container">
           <h1>
             Sacramento graduates
@@ -149,6 +174,8 @@
       </section>
 
 	  <section class="usa-section usa-section-alt">
+	      <a class="anchor_offset" id="program"></a>
+		  
 	    <div class="usa-grid">
 	      <div class="usa-intro">
 	        <h2>Making Sacramento a Platform for Startups:</h2> 
@@ -193,6 +220,8 @@
 	  </section>
 	  
 	  <section class="usa-section">
+	      <a class="anchor_offset" id="rationale"></a>
+		  
 	    <div class="usa-grid">
 	      <div class="usa-intro">
 	        <h2>Why the time is now for Sacramento</h2>
@@ -222,7 +251,7 @@
 	    </div>
 	  </section>
 	  
-	  <section class="usa-section usa-section-dark">
+	  <section class="usa-section usa-section-dark" id="principles">
 	    <div class="usa-grid">
 	      <div class="usa-intro">
 	        <h2>Principles</h2>
@@ -269,6 +298,7 @@
 
 
       <section class="why-voteusa">
+	      <a class="anchor_offset" id="process"></a>
 
         <div class="content-container">
           <h2>
@@ -286,11 +316,13 @@
 		  <div class="usa-alert usa-alert-info">
 		    <div class="usa-alert-body">
 		      <h3 class="usa-alert-heading">Who's Eligible?</h3>
-		      <p class="usa-alert-text">Applications are open to both non-profits and for-profits, as long as their mission aligns with the program's goals and principles.</p>
+		      <p class="usa-alert-text">Applications are open to <b>both non-profits and for-profits</b>, as long as their mission aligns with the program's goals and principles.</p>
 		    </div>
 		  </div>
 		  <p>
-			  Whether you're awarded a grant or not, you'll become a part of a network of innovators in Sacramento, which we will be convening regularly to collaborate, share successes and failures, and figure what we can keep doing to help Sacramento startups thrive.
+			  Whether you're awarded a grant or not, you'll become a part of a network of innovators in Sacramento, which we will be convening regularly to collaborate, share successes and failures, and figure what we can keep doing to help Sacramento startups thrive.</p>
+			<a class="usa-button usa-button-primary" href="http://bit.ly/1PUh0Ov" onclick="ga('send', 'event', 'Looked to apply', 'Clicked apply button on homepage');" target="_blank">Apply Now for a RAILS Grant</a>
+			  
         </div>
       </section>
 
@@ -375,20 +407,7 @@
 	 			</span>
 	 			</div>
 	 			<![endif]-->
-	 <script>
-	 function onBlur(el) {
-	     if (el.value == '') {
-	         el.value = el.defaultValue;
-	     }
-	 }
-	 function onFocus(el) {
-	     if (el.value == el.defaultValue) {
-	         el.value = '';
-	     }
-	 }
-	 </script>
-	 <form>
-	 </form>
+
 
 	 			<form accept-charset="UTF-8" action="https://public.govdelivery.com/accounts/CASACRA/subscriber/qualify" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="2mOoVfCQVbvV7R0VzC76i6TeUwV1pgIW8tlmH08JYPQ=" /></div>
 
@@ -400,7 +419,7 @@
 	 			<select id="subscription_type"  style='display: none' name="subscription_type"><option value="email">Email</option>
 	 			</div>
 
-	 			<input name="email" type="text" id="email" input type="text" value="Your Email (required)" onblur="onBlur(this)" onfocus="onFocus(this)" style="margin-top: 20px; width: 200px;"/>
+<input type="text" name="email" id="email" Svalue="Enter Your Email" onblur="if(this.value == '') { this.style.color='#f00'; this.value='Enter The User Name'}" onfocus="if (this.value == 'Enter The User Name') {this.style.color='#000'; this.value=''}" />
 
 
 
@@ -467,7 +486,12 @@
 
     <div class="overlay">
     </div>
-    <script src="assets/js/heroAnimation.js"></script>
+	
+	
+    <script src="assets/js/scrollspy.js"></script>
+    <script src="assets/js/site.js"></script>
+	
+    <script src="assets/js/modernizr.js"></script
 
     <script src="assets/js/stateSelect.js"></script>
 
