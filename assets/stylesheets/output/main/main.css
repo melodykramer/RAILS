@@ -982,6 +982,66 @@ figure {
 	      [type="reset"],
 	      [type="image"] {
 	        width: auto; } }
+			
+		@media screen and (max-width: 481px)  {
+	  	  .usa-button,
+	  	  .usa-button-primary,
+	  	  .usa-button:visited,
+	  	  .usa-button-primary:visited,
+	  	  button,
+	  	  [type="button"],
+	  	  [type="submit"],
+	  	  [type="reset"],
+	  	  [type="image"] {
+	  	    appearance: none;
+	  	    background-color: #0071bc;
+	  	    border: 0;
+	  	    border-radius: 0.3rem;
+	  	    color: #ffffff;
+	  	    cursor: pointer;
+	  	    display: inline-block;
+	  	    font-family: "Merriweather", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+	  	    font-size: 1.7rem;
+	  	    font-weight: 700;
+	  	    line-height: 1;
+	  	    margin-bottom: 0.5em;
+	  	    margin-right: 0.5em;
+	  	    margin-top: 0.5em;
+	  	    outline: none;
+	  	    padding: 1rem 2rem;
+	  	    text-align: center;
+	  	    text-decoration: none;
+	  	    width: 100%;
+	  	    -webkit-font-smoothing: antialiased; }
+		}
+	  .usa-button-primary,
+	  .usa-button:visited,
+	  .usa-button-primary:visited,
+	  button,
+	  [type="button"],
+	  [type="submit"],
+	  [type="reset"],
+	  [type="image"] {
+	    appearance: none;
+	    background-color: #0071bc;
+	    border: 0;
+	    border-radius: 0.3rem;
+	    color: #ffffff;
+	    cursor: pointer;
+	    display: inline-block;
+	    font-family: "Merriweather", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+	    font-size: 1.7rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    margin-bottom: 0.5em;
+	    margin-right: 0.5em;
+	    margin-top: 0.5em;
+	    outline: none;
+	    padding: 1rem 2rem;
+	    text-align: center;
+	    text-decoration: none;
+	    width: 100%;
+	    -webkit-font-smoothing: antialiased; }
 	    .usa-button:hover, .usa-button.usa-button-hover,
 	    .usa-button-primary:hover,
 	    .usa-button-primary.usa-button-hover,
