@@ -970,6 +970,8 @@ figure {
 	    text-align: center;
 	    text-decoration: none;
 	    width: 100%;
+	    -webkit-appearance: none;
+	    -webkit-border-radius: 0;
 	    -webkit-font-smoothing: antialiased; }
 	    @media screen and (min-width: 481px) {
 	      .usa-button,
@@ -1774,7 +1776,9 @@ figure {
 		  form input[type="submit"] {
 		    display: block;
 		    margin-bottom: 1.5em;
-		    margin-top: 2.5rem; }
+		    margin-top: 2.5rem; 
+			  -webkit-appearance: none;
+		}
 		    @media screen and (min-width: 600px) {
 		      form button[type="submit"],
 		      form input[type="submit"] {
@@ -2137,7 +2141,8 @@ figure {
 			 	    cursor: pointer;
 			 	    display: inline-block;
 			 	    font-family: "Merriweather", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-					-webkit-appearance: none;
+				    -webkit-appearance: none;
+				    -webkit-border-radius: 0;
 				 }
 			 
 			 @media screen and (min-width: 0px) and (max-width: 640px) {
@@ -2150,6 +2155,6 @@ figure {
 		 	    cursor: pointer;
 		 	    display: inline-block;
 		 	    font-family: "Merriweather", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-				-webkit-appearance: none;
-			}
+			    -webkit-appearance: none;
+			    -webkit-border-radius: 0;			}
 			 }
