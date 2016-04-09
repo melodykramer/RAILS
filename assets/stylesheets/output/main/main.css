@@ -2114,9 +2114,6 @@ figure {
 	  	 		   	box-shadow: 0 3px 3px rgba(50, 58, 69, 0.2);
 	  	 		 	box-sizing: border-box;
 	  	 			padding: 2em 2em 1em;
-		 			background: -moz-linear-gradient(#fff, #999);
-		 	  		background: -webkit-linear-gradient(#fff, #999);
-		 	  		background: -o-linear-gradient(#fff, #999);
   	  				-webkit-transition: all 0.4s ease;
   	  				-moz-transition: all 0.4s ease;
   	  				transition: all 0.4s ease;
@@ -2137,9 +2134,14 @@ figure {
 		     text-align: center; }
 		   .modalDialog .button {
 		     font-size: .6em; }
+			 .modalDialog input, .modalDialog select {
+				 font-size: 16px;
+			 	
+			 }
 		     @media screen and (min-width: 30em) {
 		       .modal .button {
 		         font-size: 1.1em; } }
+		
 		   .modalDialog .close-modal {
 		     color: #323a45;
 		     cursor: pointer;

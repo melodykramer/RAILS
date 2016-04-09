@@ -419,33 +419,10 @@
 				Email Updates
 				</h1>
 				<div id='quick_subscribe_new_instructions'>
-				To sign up for updates or to access your subscriber preferences, please enter your contact information below.
+				To sign up for updates, please enter your contact information below.
 				</div>
-				<ul class='form'>
-				<label for="subscription_type">Subscription Type</label>
-				<div class='input_group'>
-				<select id="subscription_type" name="subscription_type"><option value="email">Email</option>
-				<option value="phone">SMS/Text Message</option></select>
-				</div>
-				</li>
-				<li class='wireless_fields' style='display: none'>
-				<label for="phone" style="display: none;"><img alt="Required" class="required" src="https://public.govdelivery.com/assets/required-78488f80fdf01bdcae8e2eb96468960c.gif" />Wireless Number</label>
-				<div class='input_group'>
-				<!-- The full translation path is used because the translation of .select_title doesn't always resolves to the same i18n path -->
-				<select disabled="disabled" id="country_code_display" name="country_code_display" title="Country code"><option value="1 (US)">1 (US)</option>
-				<option value="1">1</option></select>
-				<input id="country_code" name="country_code" title="Country code" type="hidden" value="1" />
-
-				<input class="small" id="phone" name="phone" title="Wireless Number" type="text" />
-				</div>
-
-				</li>
-				<li class='email_fields' style='display: block'>
-				<input id="email" class="long" name="email" type="text" value="Enter Your Email" onblur="if(this.value == '') { this.style.color='#f00'; this.value='Enter Your Email'}" onfocus="if (this.value == 'Enter Your Email') {this.style.color='#000'; this.value=''}" />
-				
-
-				</li>
-				</ul>
+				<input type="text" id="email" name="email" placeholder="Email address" class="long" size="30" />
+			
 				<div class='button_panel'>
 				<input class="usa-button" name="commit" type="submit" value="Submit" />
 				</div>
@@ -458,7 +435,7 @@
 	 			    new GD.view.AccountSubscribersNew({
 	 			      facebookAppId: "188927694463050",
 	 			      facebookLoginURL: "https://public.govdelivery.com//accounts/CASACRA/facebook_subscriber/login",
-	 			      wirelessEnabled: true,
+	 			      wirelessEnabled: false,
 	 			      facebookEnabled: false,
 	 			      permissions: "email"
 	 			    }).init();
