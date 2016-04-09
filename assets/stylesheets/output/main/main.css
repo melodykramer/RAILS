@@ -2246,8 +2246,21 @@ figure {
 				 padding: 0;
 			 }
 			 
-			 .button_panel form button[type="submit"], form input[type="submit"] {
-				 margin-top: .5rem;
+			 .button_panel form input[type="submit"] {
+				 .button_panel form input[type="submit"] {
+					margin-top: .5rem;
+			 	    background-color: #0071bc;
+			 	    border: 0;
+			 	    border-radius: 0.3rem;
+			 	    color: #ffffff;
+			 	    cursor: pointer;
+			 	    display: inline-block;
+			 	    font-family: "Merriweather", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+				 }
+			 
+			 @media screen and (max-width: 460px;) {
+				 .button_panel form input[type="submit"] {
+				margin-top: .5rem;
 		 	    background-color: #0071bc;
 		 	    border: 0;
 		 	    border-radius: 0.3rem;
@@ -2255,5 +2268,5 @@ figure {
 		 	    cursor: pointer;
 		 	    display: inline-block;
 		 	    font-family: "Merriweather", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+				}
 			 }
-
