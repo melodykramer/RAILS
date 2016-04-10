@@ -1292,7 +1292,7 @@ p {
   }
 
   #navigation_bar .active a {
-    text-decoration: underline;
+	  border-bottom: 1px solid #ffffff;
   }
 
   #navigation_bar li {
@@ -1313,9 +1313,8 @@ p {
   }
 
   #navigation_bar li a:hover {
-    background: #046B99;
     color: #fff;
-    text-decoration: none;
+	border-bottom: 1px dotted #ffffff;
   }
 
   #navigation_bar #menu_icon {
