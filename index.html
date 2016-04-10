@@ -130,7 +130,8 @@
           </li>
 		  
           <li class="play_square">
-            <a href="http://bit.ly/RAILSapp" title="Apply Now" target="_blank">Apply Now</a>
+            <a href="http://bit.ly/RAILSapp" title="Apply Now" target="_blank" onclick=
+        "ga('send', 'event', 'Looked to apply', 'Navigation');">Apply Now</a>
           </li>
 		  
 		  
@@ -263,7 +264,8 @@
           </div>
 
 
-          <h3><a href="#acceleration">Acceleration Grants</a>
+          <h3><a href="#acceleration" onclick=
+        "ga('send', 'event', 'More info', 'Acceleration');">Acceleration Grants</a>
           </h3>
 
 
@@ -279,7 +281,8 @@
           </div>
 
 
-          <h3><a href="#innovation" rel="modal:open">Innovation Grants</a>
+          <h3><a href="#innovation" rel="modal:open" onclick=
+        "ga('send', 'event', 'More info', 'Innovation');">Innovation Grants</a>
           </h3>
 
 
@@ -295,7 +298,8 @@
           </div>
 
 
-          <h3><a href="#leadership" rel="modal:open">Leadership Grants</a>
+          <h3><a href="#leadership" rel="modal:open" onclick=
+        "ga('send', 'event', 'More info', 'Leadership');">Leadership Grants</a>
           </h3>
 
 
@@ -308,7 +312,7 @@
       <div class="usa-grid usa-cta">
         <a class="usa-button usa-button-primary" href="http://bit.ly/RAILSapp"
         onclick=
-        "ga('send', 'event', 'View the application', 'Clicked Apply Now button in homepage body');">
+        "ga('send', 'event', 'Looked to apply', 'Homepage body');">
         Apply Now</a>
       </div>
 	  <div class="usa-grid">
@@ -379,8 +383,8 @@
 
 
       <div class="usa-grid usa-cta">
-        <a class="usa-button usa-button-secondary" href="#community" onclick=
-        "ga('send', 'event', 'Joined the community', 'Clicked View the Community button in homepage body');">
+        <a class="usa-button usa-button-secondary" href="#community"  onclick=
+        "ga('send', 'event', 'More info', 'Community');">
         Join the community</a>
       </div>
     </section>
@@ -612,7 +616,7 @@
       <div class="usa-grid usa-cta">
         <a class="usa-button usa-button-primary" href="http://bit.ly/RAILSapp"
         onclick=
-        "ga('send', 'event', 'Applied from Accleration', 'Clicked Apply Now button in Acceleration overlay');">
+        "ga('send', 'event', 'Looked to apply', 'Clicked Apply Now button in Acceleration overlay');">
         Apply Now</a>
       </div>
     </div>
@@ -636,7 +640,7 @@
       <div class="usa-grid usa-cta">
         <a class="usa-button usa-button-primary" href="http://bit.ly/RAILSapp"
         onclick=
-        "ga('send', 'event', 'Applied from Innovation', 'Clicked Apply Now button in Innovation overlay');">
+        "ga('send', 'event', 'Looked to apply', 'Clicked Apply Now button in Innovation overlay');">
         Apply Now</a>
       </div>
     </div>
@@ -662,7 +666,7 @@
       <div class="usa-grid usa-cta">
         <a class="usa-button usa-button-primary" href="http://bit.ly/RAILSapp"
         onclick=
-        "ga('send', 'event', 'Applied from Leadership', 'Clicked Apply Now button in Leadership overlay');">
+        "ga('send', 'event', 'Looked to apply', 'Clicked Apply Now button in Leadership overlay');">
         Apply Now</a>
       </div>
     </div>
@@ -712,7 +716,8 @@
 
             <div class='button_panel'>
               <input class="usa-button-primary" name="commit" type="submit"
-              value="Submit">
+              value="Submit"  onclick=
+        "ga('send', 'event', 'Joined Community', 'Modal');">
             </div>
           </fieldset>
         </form>
